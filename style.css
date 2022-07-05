@@ -1,0 +1,35 @@
+
+* { margin: 0;
+    padding:0;
+    font-size: 20px;
+}
+
+h1{
+    font-family: sans-serif;
+    color: #34A58A;
+    text-align: center;
+    padding: 3rem 0;
+    font-size: 3rem;
+}
+
+h2{
+    font-family: sans-serif;
+    color: #345765;
+    padding:2rem 2rem;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+nav ul li{
+    margin: 0 3rem;
+}
+
+a{
+    font-family: sans-serif;
+    color: #1d343d;
+    padding:2rem 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+

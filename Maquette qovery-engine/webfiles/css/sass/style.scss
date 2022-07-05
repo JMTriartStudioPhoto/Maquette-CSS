@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+header{
+    width: auto;
+    background-color: #151B2B;
+}
+nav{
+    
+
+    article{
+        display: flex;
+        margin: auto;
+        width: auto;
+        max-width: 1240px;
+        height: 926px;
+        padding: 0 2rem;
+        align-items: center;
+        background-color: #151B2B;
+        position: relative;
+    }
+    
+    #logo_qovery{
+        position: absolute;
+        width: 160px;
+        top: 10%;
+    }
+
+    h1{
+        color: #FFFFFF;
+
+        width: auto;
+        /*max-width: 0;*/
+        font-size: 2.8rem;
+        margin-bottom: 1rem;
+        font-weight: 800;
+    }
+
+    div.Titre{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    img#star{
+        width: 101px;
+        //*display: inline-block;*/
+
+    }
+
+    p:nth-of-type(1) { /*sous titre*/
+        color: #FFFFFF;
+        font-size: 1.5rem;
+        margin: 1.5rem 0;
+        width: 487px;
+    }
+
+    P{
+        font-size: 1rem;
+        color: white;
+    }
+    
+    #git, #dis{ /*icone github & discord*/
+        width: 14px;
+        height: 14px;
+        float: left;
+        overflow:hidden
+    }
+
+
+    div.github{ /*div github*/
+        background-color: #454658;
+        border-radius: 3px;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 1.5rem;       
+    }
+
+    div.discord{ /*div discord*/
+        background-color: #6578C0;
+        border-radius: 3px;
+        margin-left: 2rem;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+
+    span{
+        margin-left: 0.7rem;
+        font-size: 1rem;
+        color: white;
+        display: inline-block;
+    }
+
+    #graph{
+        width: 567px;
+        height: 687px;
+        text-align: end;
+    }
+}
+
+
+main{
+    background-color: #F9F9FD;
+    article.A{
+        h2{
+            font-size: 2rem;
+            line-height: 3.5rem;
+            color: #454658;
+            text-align: center;
+            margin-top: 5rem;
+        }
+        p{
+            font-size: 1rem;
+            text-align: center;
+            width: 853px;
+            margin: auto;
+        }
+        img{
+            width: auto;
+            max-width: 853px;
+            padding-top: 30px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+}
+
+    article.B{
+        h2{
+            font-size: 2rem;
+            line-height: 3.5rem;
+            color: #454658;
+            text-align: center;
+            margin-top: 5rem;
+        }
+        p{
+            font-size: 1rem;
+            text-align: center;
+            width: 853px;
+            margin: auto;
+        }
+        img{
+            width: 853px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+
+    #code{
+        width: 853px;
+        margin: auto;
+        font-family: Courier;
+        font-size: 1rem;
+        background-color: white !important;
+        padding:3px 0px;
+    }
+
+    h3{
+        width: 50px;
+        margin-left: 20px;
+        border-radius: 3px;
+        text-align: center;
+        font-size: 1rem;
+        background-color: #5D64D2;
+    }
+       .textnoir{
+        color: #454658;
+       }
+       .bleu-gras{
+        color: #5D64D2;
+        font-weight: bold;
+       }
+       .bleu-lite{
+        color: #5D64D2;;
+       }
+       .orange-gras{
+        color: #ff6240;
+        font-weight: bold;
+       }
+       .bleu-ciel{
+        color: #43c9d5;
+       }
+       .gris-pale{
+        color: #a8a8c1;
+       }
+}
+
+.bouton_discord{
+        border-radius: 3px;
+        display: inline-block;
+        white-space: nowrap;
+        padding: 0.9rem 1.6rem !important;
+        color: white;
+        white-space: nowrap;
+        text-decoration: none;
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+}

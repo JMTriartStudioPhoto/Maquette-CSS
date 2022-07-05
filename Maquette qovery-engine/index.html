@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="maquette Qovery Engine">
+    <link rel="stylesheet" href="./webfiles/css/style.css">
+    <link rel="icon"
+        href="https://prod-chadatalake.s3.eu-west-3.amazonaws.com/startups/7c066a11-0ec8-4e29-9c98-c50660633f38.png">
+
+    <title>Maquette Qovery Engine - Jean-Michel</title>
+
+</head>
+<body>
+    <header>
+        <nav> 
+<article>
+    <div class="bloctexte">
+        <img id="logo_qovery" src="./src/img/logo-white.svg" title="Logo-Qovery">
+        
+            <div class="Titre">
+                <h1>Qovery&nbsp;Engine</h1>
+                <img id="star" src="./src/img/image 5.png" title="image star"> 
+            </div>
+
+            <p>
+                Abstraction layer to deploy microservices 
+                applications on any Cloud provider.
+            </p>
+            <p>
+                Qovery Engine is an open-source abstraction layer product 
+                that turns easy apps deployment on AWS, GCP, Azure and 
+                others Cloud providers. 
+            </p>
+    
+        <div class="Github">   
+                <a href="#" target="_blank" title="Redirection-vers-Github">
+                    <img id="git" src="./src/img/Vector.png" title="Logo Github">
+                    <span>See on Github</span>
+                </a>
+        </div>
+
+        <div class="Discord">
+                <a href="#" target="_blank" title="Redirection-vers-discord"></a>
+                <img id="dis" src="./src/img/discord icon.png" title="Logo discord">
+                <span>Join us on Discord</span>
+        </div>
+    </div>
+        <div>
+            <img id="graph" src="./src/img/Group 225 1.png" title="Logo discord">
+        </div>
+</article>
+        </nav>       
+    </header>
+
+    <main>
+        <article class="A">
+            <h2>How does it work?</h2>
+            <p>Qovery Engine is an open-source abstraction layer product that turns easy apps deployment on AWS, GCP, 
+                Azure and others Cloud providers. The Qovery Engine is coded in Rust and takes advantage of Terraform, 
+                Helm, Kubectl, Docker to manage resources.</p>
+            <img src="./src/img/Group1.png" title="graphique">
+        </article>
+
+        <article class="B">
+            <h2>Usage</h2>
+            <p>Initialize EKS (AWS Kubernetes) and ECR (AWS container registry) on AWS</p>
+            <img src="./src/img/fond_B.svg" title="fond_lignes">
+        </article>
+
+            <div id="code">
+                <h3>RUST</h3>
+                <pre>
+                    <code>
+                        <span class="bleu-gras">let</span> <span class="textnoir">engine</span> = Engine::<span class="orange-gras">new</span>(
+                            context, <span class="gris-pale">// parameters</span>
+                            local_docker, <span class="gris-pale">// initialize Docker as a Build Platform</span>
+                            ecr, <span class="gris-pale">// initialize Elastic Container Registry</span>
+                            aws, <span class="gris-pale">// initialize AWS account</span>
+                            cloudflare, <span class="gris-pale">// initialize Cloudflare as DNS Nameservers</span>
+                        );
+                        
+                        <span class="bleu-gras">let</span> <span class="orange-gras">session</span> = <span class="bleu-gras">match</span> engine.<span class="orange-gras">session</span>() {
+                            <span class="orange-gras">Ok</span>(session) =&gt; session, <span class="gris-pale">// get the session</span>
+                            <span class="orange-gras">Err</span>(config_error) =&gt; <span class="bleu-ciel">panic!</span>(<span class="bleu-lite">"configuration error {:?}"</span>, config_error),
+                        };
+                        
+                        <span class="bleu-gras">let mut </span><span class="textnoir">tx</span> = session.<span class="orange-gras">transaction</span>();
+                        
+                        <span class="gris-pale">// create EKS (AWS managed Kubernetes cluster)</span>
+                        tx.<span class="orange-gras">create_kubernetes</span>(&amp;eks);
+                        
+                        <span class="gris-pale">// create the infrastructure and wait for the result</span>
+                        <span class="bleu-gras">match</span> tx.<span class="orange-gras">commit</span>() { 
+                            TransactionResult::<span class="bleu-lite">Ok</span> =&gt; <span class="bleu-ciel">println!</span>(<span class="bleu-lite">"OK"</span>),
+                            TransactionResult::<span class="orange-gras">Rollback</span>(commit_err) =&gt; <span class="bleu-ciel">println!</span>(<span class="bleu-lite">"ERROR but rollback OK"</span>), 
+                            TransactionResult::<span class="orange-gras">UnrecoverableError</span>(commit_err, rollback_err) =&gt; <span class="bleu-ciel">println!</span>(<span class="bleu-lite">"FATAL ERROR"</span>)
+                        };                        
+                    </code>
+                </pre>
+            </div>
+
+
+            <a class="bouton_github" href="#" target="_blank" title="Redirection_vers_Github">
+                <img src="./src/img/Vector.png" alt="Logo_Github">
+                <span>Join us on Discord</span>
+            </a>
+            <a class="bouton_discord" href="#" target="_blank" title="Redirection_vers_Discord">
+                <img src="./src/img/discord icon.png" alt="Logo_Discord">
+                <span>Join us on Discord</span>
+            </a>
+        </div>
+    </div>
+
+
+</body>
