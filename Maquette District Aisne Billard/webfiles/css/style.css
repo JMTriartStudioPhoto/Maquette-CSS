@@ -35,18 +35,33 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-email:before {
+.icon-Enveloppeb:before {
   content: "\e900";
-  color: #34a58a;
+  color: #fff;
 }
 
-.icon-phone:before {
+.icon-Batiment:before {
   content: "\e901";
+  color: #fff;
+}
+
+.icon-Telephone:before {
+  content: "\e902";
+  color: #fff;
+}
+
+.icon-Enveloppe:before {
+  content: "\e903";
   color: #34a58a;
 }
 
-.icon-localisation:before {
-  content: "\e902";
+.icon-Geolocalisation:before {
+  content: "\e904";
+  color: #34a58a;
+}
+
+.icon-Phone:before {
+  content: "\e905";
   color: #34a58a;
 }
 
@@ -314,6 +329,21 @@ main span#rond {
   align-content: center;
 }
 
+svg {
+  background-color: #345765;
+  margin: 0 auto;
+  width: auto;
+  height: 100px;
+  margin-bottom: -6px;
+  margin-top: 4, 56px;
+  z-index: 1;
+}
+
+#firstPath {
+  width: auto;
+  background-color: #34A58A;
+}
+
 /* 5 - Footer           */
 footer {
   margin: 0 auto;
@@ -322,19 +352,21 @@ footer {
   display: flex;
   flex-direction: column;
   padding-top: 2.82rem;
+  z-index: 2;
 }
 footer .first {
   display: flex;
   max-width: 1600px;
   margin: 0 auto;
   padding-bottom: 3.8rem;
+  z-index: 2;
 }
 footer .first div h4 {
   font-family: "Montserrat";
   text-decoration: underline;
   text-underline-offset: 0.1rem;
   padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   font-size: 1.37rem;
   line-height: 1.56rem;
   letter-spacing: 6%;
@@ -352,19 +384,13 @@ footer .first div p a {
   text-decoration: none;
 }
 footer .first div .espace {
-  padding-left: 1.4rem;
+  padding-left: 2rem;
 }
 footer .first .footer1 {
   max-height: 466px;
   margin: 0 auto;
   align-self: center;
   padding-right: 15.87rem;
-}
-footer .first .footer1 .icon-phone:before {
-  color: #FFFFFF;
-}
-footer .first .footer1 .icon-email:before {
-  color: #FFFFFF;
 }
 footer .first .footer1 h4 {
   margin: 0;
@@ -382,9 +408,6 @@ footer .footer2 {
 footer .footer2 .juridique {
   padding-top: 2rem;
 }
-footer .footer2 p {
-  padding-bottom: 2rem;
-}
 footer .footer3 {
   display: flex;
   flex-direction: column;
@@ -399,7 +422,7 @@ footer .footer3 .logo_Billard {
 }
 footer .footer4 {
   border-top: #FFFFFF solid 1px;
-  padding: 1.31rem 1.18rem 0 0;
+  padding: 1.43rem;
   text-align: center;
   font-family: "Montserrat";
   font-weight: 300;
