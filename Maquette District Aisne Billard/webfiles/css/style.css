@@ -366,15 +366,14 @@ footer .first div h4 {
   text-decoration: underline;
   text-underline-offset: 0.1rem;
   padding-top: 1rem;
-  padding-bottom: 1rem;
   font-size: 1.37rem;
   line-height: 1.56rem;
   letter-spacing: 6%;
-  font-weight: 500;
+  font-weight: 31.25rem;
 }
 footer .first div p {
   font-family: "Lato";
-  font-weight: 400;
+  font-weight: 25rem;
   font-size: 1.25rem;
   line-height: 1.56rem;
   letter-spacing: 6%;
@@ -385,6 +384,7 @@ footer .first div p a {
 }
 footer .first div .espace {
   padding-left: 2rem;
+  padding-top: 0, 5rem;
 }
 footer .first .footer1 {
   max-height: 466px;
@@ -394,39 +394,51 @@ footer .first .footer1 {
 }
 footer .first .footer1 h4 {
   margin: 0;
+  padding-bottom: 2rem;
 }
 footer .first .footer1 p {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 footer .first .footer1 .siege_social {
   padding-top: 2rem;
+  padding-bottom: 1.12rem;
 }
 footer .footer2 {
   max-height: 466px;
   padding-right: 12.62rem;
 }
+footer .footer2 h4 {
+  margin: 0;
+  padding-bottom: 2rem;
+}
+footer .footer2 p {
+  padding-bottom: 0.62rem;
+}
 footer .footer2 .juridique {
-  padding-top: 2rem;
+  padding-top: 1.8rem;
+  padding-bottom: 1rem;
 }
 footer .footer3 {
   display: flex;
   flex-direction: column;
 }
 footer .footer3 .logo_Aisne {
+  padding-top: 1rem;
   justify-content: space-between;
   max-width: 115px;
 }
 footer .footer3 .logo_Billard {
+  padding-top: 0.5rem;
   justify-content: space-between;
   max-width: 115px;
 }
 footer .footer4 {
   border-top: #FFFFFF solid 1px;
+  font-family: "Montserrat";
   padding: 1.43rem;
   text-align: center;
-  font-family: "Montserrat";
-  font-weight: 300;
-  font-size: 1.12rem;
+  font-weight: 18.75rem;
+  font-size: 1.25rem;
   line-height: 1.56rem;
   letter-spacing: 6%;
 }
