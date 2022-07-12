@@ -7,7 +7,7 @@
 /* 3 - Body             */
 /* 4 - Main             */
 /* 5 - Footer           */
-/*                      */
+/* 6 - Media Query      */
 /* -------------------- */
 
 /*-------------ICONE---------------------------*/
@@ -147,12 +147,10 @@ main{
 
         img {
             width:100%;
-            max-width: 1400px;
+            max-width: auto;
             margin: auto;
         }
     }
-
-/*(¯`·._ .·`¯)(¯`·._ .·`¯)(¯`·._ .·`¯)(¯`·._ .·`¯)*/
 
     .toto{
         display: flex;
@@ -242,6 +240,8 @@ main{
             border-radius: 10px;
             width: 547px;
             height: 552px;
+            max-width: auto;
+            margin: auto;
         }
     }
 
@@ -560,18 +560,23 @@ footer{
 
 /*(¯`·._ .·`¯)(¯`·._ .·`¯)(¯`·._ .·`¯)(¯`·._ .·`¯)*/
     
-/* ----------WEB MOBILE----------*/
+/* 6 - Media Query      */
 
 
 @media screen and (max-width: 1024px){
     *{
-        font-size: 16px;
+        /*font-size: 16px;*/
     }
 }
 
 @media screen and (max-width: 800px){
     header{
         nav{
+            position: relative;
+            width: fit-content;
+            width: auto;
+            margin: auto;
+        
             div{
                 height: 50%;
                 padding: 1rem 0;
@@ -590,15 +595,42 @@ footer{
     }
 
     main{
-        overflow: hidden;
+        display: block;
+        width: auto;
+        margin: auto;
+            
+            h1.h2{
+                display: block;
+                margin: 30px;
+            }
 
-        .entree{
-            section{
-                iframe{
-                min-width: 100%;
+
+            div.gauche{
+
+                display: block;
+                flex-direction: column;
+                margin: 30px;
+                padding: 0;
+                padding-top: 2rem;
+
+                
+            
+                
+
+                .second{
+                    display: block;
+                    text-align: center;
+                    margin: auto;
+                    padding-left: 200px;
                 }
             }
-        }
+            #third{
+                display: block;
+                width: 50px;
+                height: 50px;
+            }
+            
+        
 
         .section_dernieres_actualité_{
             .paver_global_{
@@ -612,10 +644,25 @@ footer{
                         padding-bottom: 1rem;
                         
                         img{
-                            margin: 0;
-                            width: 337px;
-                            height: 300px;
+                            margin: auto;
+                            width: 100%;
+                            padding-top: 3rem;
+                            width: fit-content;
                         }
+
+                        H3{
+                            padding-top: 1.5rem;
+                            padding-left: 8rem;
+                            width: 100%;
+                        }
+
+                        p{
+                            margin: auto;
+                            width: 340px;
+                            padding-left: 8rem;
+                         
+                        }
+
                     }
                 }
             }
@@ -623,27 +670,40 @@ footer{
     }
     
     footer{
+        display: block;
         .first{
             flex-direction: column;
             text-align: center;
-
+            .footer1{
+                display: block;
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
+                padding-top: 2rem;
+                .siege_social{
+                    padding-top: 3rem;
+                }
+            }
             .footer2{
                 flex-direction: column;
                 margin: 0;
                 padding: 0;
+                padding-top: 3rem;
+            }
 
-                div:last-of-type{
-                    display: flex;
-
-                    img{
-                        display: inline-block;
-                    }
-                }
+            .footer3{
+                display: block;
+                flex-direction: column;
+                padding-top: 3rem;
+                
             }
         }
 
         .footer4{
-            padding-top: 1rem;
+            display: block;
+            font-size: auto;
         }
     }
 }
+
+
