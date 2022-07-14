@@ -10,26 +10,34 @@ h1{
     text-align: center;
     padding: 3rem 0;
     font-size: 3rem;
+    font-weight: bold;
 }
 
 h2{
-    font-family: sans-serif;
+    font-family: Montserrat;
     color: #345765;
     padding:2rem 2rem;
     font-size: 2rem;
     text-decoration: underline;
+    font-weight: bold;
 }
 
 nav ul li{
     margin: 0 3rem;
 }
 
+li a:hover {
+    background-color: #34A58A;
+    padding: 10px;
+    margin-left: 30px;
+
+
+}
+
 a{
-    font-family: sans-serif;
+    font-family: Lato;
     color: #1d343d;
     padding:2rem 2rem;
     font-size: 1rem;
     text-decoration: none;
 }
-
-
