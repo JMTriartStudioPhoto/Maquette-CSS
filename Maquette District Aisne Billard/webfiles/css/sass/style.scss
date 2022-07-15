@@ -111,10 +111,19 @@ header {
     }
 
     a {
+        font-family: 'Lato'; 
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+        font-weight: 400;
         color: white;
         display: block;
         text-decoration: none;
         padding: 2.5rem 2.5rem;
+    }
+
+    li a:hover {
+        background-color: #34A58A;
+
     }
 }
  
@@ -233,6 +242,8 @@ main{
             letter-spacing: 2px;
             font-weight: 600;
         }
+        
+        
 
         #carte{           
             height: 83%;
@@ -244,7 +255,6 @@ main{
             margin: auto;
         }
     }
-
 
 
 /*(¯`·._ .·`¯)(¯`·._ .·`¯)(¯`·._ .·`¯)(¯`·._ .·`¯)*/
@@ -354,7 +364,6 @@ main{
 
                     
 
-
                     .en_savoir{
                         font-style: normal;
                         line-height: 1.2rem;
@@ -408,7 +417,7 @@ svg {
         background-color: #345765;
         margin:  0 auto;
         width: auto;
-        height: 100px; 
+        /*height: 100px;*/ 
         margin-bottom: -6px;
         margin-top: 4,56px;
         z-index: 1; 
